@@ -95,7 +95,11 @@ def turn(board)
     user_input = gets
     index=input_to_index(user_input)
   end
-  move(board,index,"X")
+  if turn_count(board).even?
+    move(board,index,"X")
+  else
+    move(board,index,"O")
+  end
   display_board(board)
 end
 
