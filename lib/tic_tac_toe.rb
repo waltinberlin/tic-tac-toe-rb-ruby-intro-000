@@ -131,15 +131,15 @@ def current_player(board)
 end
 
 def play(board)
-  turn(board)
-  while over?(board)==false
-    turn(board)
-  end
-  if winner(board) == nil
-    puts "Draw"
-  elsif winner(board) == "X"
-    puts "X won"
-  else
-    puts "O won"
-  end
+  #turn(board)
+  #while over?(board)==false
+  #  turn(board)
+  #end
+  #if winner(board) == nil
+  #  puts "Draw"
+  #elsif winner(board) == "X"
+  #  puts "X won"
+  #else
+  #  puts "O won"
+  #end
 end
