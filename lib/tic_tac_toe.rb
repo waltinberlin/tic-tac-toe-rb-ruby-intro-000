@@ -128,4 +128,5 @@ end
 
 def play(board)
   turn(board)
+  won?(board)
 end
