@@ -74,3 +74,15 @@ end
 def move(board, position, char)
   board[position] = char
 end
+
+def valid_move?(board, index)
+  if index>=0 && index<=8
+    if position_taken?(board, index) == true
+      false
+    else
+      true
+    end
+  else
+    false
+  end
+end
