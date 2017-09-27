@@ -132,9 +132,9 @@ end
 
 def play(board)
   turn(board)
-  #while over?(board)==false
+  while over?(board)==false
   #  turn(board)
-  #end
+  end
   #if winner(board) == nil
   #  puts "Draw"
   #elsif winner(board) == "X"
