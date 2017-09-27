@@ -131,7 +131,6 @@ def current_player(board)
 end
 
 def play(board)
-  puts "test"
   turn(board)
   while over?(board)==false
     turn(board)
