@@ -135,9 +135,9 @@ def play(board)
   while over?(board)==false
     turn(board)
   end
-  if winner == nil
+  if winner(board) == nil
     puts "Draw"
-  elsif winner == "X"
+  elsif winner(board) == "X"
     puts "X won"
   else
     puts "O won"
