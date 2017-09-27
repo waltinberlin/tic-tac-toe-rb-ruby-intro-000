@@ -135,4 +135,10 @@ def play(board)
   while over?(board)==false
     turn(board)
   end
+  if winner == nil
+    puts "Draw"
+  elsif winner == "X"
+    puts "X won"
+  else
+    puts "O won"
 end
