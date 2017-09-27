@@ -39,11 +39,12 @@ describe './lib/tic_tac_toe.rb' do
       allow($stdout).to receive(:puts)
       allow(self).to receive(:gets).and_return("1","2","3")
       allow(self).to receive(:over?).and_return(false, false, false, true)
+      puts "test"
+
       allow(self).to receive(:turn) do
         num_of_turns += 1
         Process.exit!(true) if num_of_turns > 10
       end.and_call_original
-      puts "test"
       play(board)
 
       expect(board).to match_array(["X", "O", "X", " ", " ", " ", " ", " ", " "])
