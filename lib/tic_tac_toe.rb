@@ -141,4 +141,5 @@ def play(board)
     puts "X won"
   else
     puts "O won"
+  end
 end
